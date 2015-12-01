@@ -132,13 +132,13 @@ public class GameController : MonoBehaviour {
     //Función para inicializar el juego
     public void startGame()
     {
+        dificulty = 3;
+
         initializeObstacles();
 
         m_score = 0;
 
         speedObstacles = -2f;
-
-        dificulty = 3;
 
         StartCoroutine(updateSpeed());
 

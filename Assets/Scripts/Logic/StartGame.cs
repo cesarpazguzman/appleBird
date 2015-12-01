@@ -9,6 +9,8 @@ public class StartGame : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
+        Managers.GetInstance.SpawnerMgr.clearPool();
+
         GameController gameMgr = Managers.GetInstance.GameMgr;
 
         //Inicializamos el gameMgr
